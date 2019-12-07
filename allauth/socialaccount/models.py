@@ -105,7 +105,7 @@ class SocialAccount(models.Model):
     extra_data = JSONField(verbose_name=_('extra data'), default=dict)
 
     class Meta:
-        unique_together = ('provider', 'uid', 'user_id')
+        #unique_together = ('provider', 'uid', 'user_id')
         verbose_name = _('social account')
         verbose_name_plural = _('social accounts')
 
